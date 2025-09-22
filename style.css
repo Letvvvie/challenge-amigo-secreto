@@ -147,11 +147,12 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
-    width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .button-draw img {
@@ -160,6 +161,29 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.button-reset {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button-reset:hover {
+  background-color: #0b4777;
 }
 
 .animado {

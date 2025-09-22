@@ -67,3 +67,9 @@ function sortearAmigo() {
   input.value = '';
 }
 
+function reiniciar() {
+  amigos = [];
+  document.getElementById('listaAmigos').innerHTML = '';
+  document.getElementById('resultado').innerHTML = '';
+  input.value = '';
+}
