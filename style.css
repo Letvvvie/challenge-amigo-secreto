@@ -1,16 +1,17 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-primary: #59AC77;
+    --color-secondary: #3A6F43;
+    --color-tertiary: #147aaa;
+    --color-button: #147ada;
+    --color-button-hover: #0b4777;
+    --color-text: #fffcfc;
+    --color-white: #ffffff;
 }
 
 /* Estilos generales */
 * {
     margin: 0;
+    font-family: "Inter", sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
@@ -43,8 +44,8 @@ body {
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border: 3px dotted #000000;
+    border-radius: 22px 22px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,8 +83,8 @@ body {
 .input-name {
     width: 100%;
     padding: 10px;
-    border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
+    border: 1px solid #000;
+    border-radius: 15px 0 0 15px;
     font-size: 16px;
 }
 
@@ -97,9 +98,9 @@ body {
     flex: 1;
     padding: 10px 15px;
     font-size: 16px;
-    border: 2px solid #333;
+    border: 3px solid #333;
     border-right: none;
-    border-radius: 25px 0 0 25px;
+    border-radius: 15px 0 0 15px;
     font-family: "Merriweather", serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -109,8 +110,8 @@ button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    border: 2px solid #000;
-    border-radius: 25px;
+    border: 2px solid #000000;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -122,7 +123,7 @@ button {
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #0f6ebd;
 }
 
 /* Listas */
@@ -136,7 +137,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #d875b7;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -159,4 +160,19 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.animado {
+    animation: aparecer 1s ease-out;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
